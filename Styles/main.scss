@@ -1,0 +1,41 @@
+// #5
+@import "_values";
+
+// #1
+.main {
+    background: tan;
+    // #3
+    h1 {
+        color: #ddd;
+        // BONUS #1
+        &:hover {
+             color: $brown1;
+             @extend %center;
+    }
+}
+    // #7
+    h3 {
+        color: $brown1;
+    }
+}
+
+
+
+.minor {
+    // #8
+    background: silver;
+    h1{
+        // #9
+        text-decoration: underline;
+    }
+
+    h2 {
+        // #7
+        background: $brown1;
+        // #10
+        text-decoration: line-through;
+    }
+    // #12
+    @extend %center;
+}
+
