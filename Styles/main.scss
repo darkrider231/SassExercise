@@ -1,19 +1,29 @@
 // #5
-@import "_values";
+@import "values";
 
 // #1
 .main {
     background: tan;
+    // BONUS #3
+    h4 {
+        display: none;
+    }
+    @include flex (space-between, center);
     // #3
     h1 {
         color: #ddd;
         // BONUS #1
         &:hover {
-             color: $brown1;
+             text-decoration: underline;
              @extend %center;
+            //  BONUS #2
+            margin-bottom: 25px * 4;
     }
 }
     // #7
+    h2 {
+        background-color: $brown1;
+    }
     h3 {
         color: $brown1;
     }
@@ -27,15 +37,16 @@
     h1{
         // #9
         text-decoration: underline;
+        // #12
+        @extend %center;
     }
 
     h2 {
-        // #7
-        background: $brown1;
         // #10
         text-decoration: line-through;
+        // #12
+        @extend %center;
     }
-    // #12
-    @extend %center;
+    
 }
 

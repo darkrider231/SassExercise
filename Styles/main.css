@@ -1,10 +1,23 @@
-.main h1:hover, .minor {
+.main h1:hover, .minor h1, .minor h2 {
   text-align: center;
   padding: 20px;
 }
 
 .main {
   background: tan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main h4 {
+  display: none;
 }
 
 .main h1 {
@@ -12,7 +25,12 @@
 }
 
 .main h1:hover {
-  color: #964B00;
+  text-decoration: underline;
+  margin-bottom: 100px;
+}
+
+.main h2 {
+  background-color: #964B00;
 }
 
 .main h3 {
@@ -28,7 +46,6 @@
 }
 
 .minor h2 {
-  background: #964B00;
   text-decoration: line-through;
 }
 /*# sourceMappingURL=main.css.map */

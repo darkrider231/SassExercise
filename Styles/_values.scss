@@ -7,3 +7,10 @@ $brown1: #964B00;
     padding:  20px;
 
 }
+
+// BONUS #3
+@mixin flex ($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
